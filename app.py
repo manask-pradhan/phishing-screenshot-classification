@@ -65,9 +65,9 @@ if uploaded_file:
 
         st.subheader("📊 Prediction")
 
-        col1, col2 = st.columns(2)
-        col1.metric("✅ Legitimate", f"{legitimate_prob:.2f}%")
-        col2.metric("🚨 Phishing", f"{phishing_prob:.2f}%")
+        # col1, col2 = st.columns(2)
+        # col1.metric("✅ Legitimate", f"{legitimate_prob:.2f}%")
+        # col2.metric("🚨 Phishing", f"{phishing_prob:.2f}%")
 
         if phishing_prob / 100 > 0.3:
             st.error("🚨 This screenshot is likely PHISHING")
